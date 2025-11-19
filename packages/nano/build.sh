@@ -21,5 +21,5 @@ TERMUX_PKG_RM_AFTER_INSTALL="bin/rnano share/man/man1/rnano.1 share/nano/man-htm
 termux_step_post_make_install() {
 	# Configure nano to use syntax highlighting:
 	NANORC=$TERMUX_PREFIX/etc/nanorc
-	echo "include \"$TERMUX_PREFIX/share/nano/*nanorc\"" > "$NANORC"
+	echo "include \"$TERMUX_PREFIX/share/nano/*nanorc\"" >> "$NANORC"
 }
